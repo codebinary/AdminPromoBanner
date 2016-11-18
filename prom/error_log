@@ -1,0 +1,18 @@
+[28-Sep-2016 15:52:32 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kiacom/public_html/promociones/prom/index.php:5) in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:53:09 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kiacom/public_html/promociones/prom/index.php:5) in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:53:17 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kiacom/public_html/promociones/prom/index.php:5) in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:53:18 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kiacom/public_html/promociones/prom/index.php:5) in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:53:28 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kiacom/public_html/promociones/prom/index.php:5) in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:54:27 America/Chicago] PHP Parse error:  syntax error, unexpected 'header' (T_STRING), expecting ',' or ';' in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:54:28 America/Chicago] PHP Parse error:  syntax error, unexpected 'header' (T_STRING), expecting ',' or ';' in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:54:28 America/Chicago] PHP Parse error:  syntax error, unexpected 'header' (T_STRING), expecting ',' or ';' in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:54:29 America/Chicago] PHP Parse error:  syntax error, unexpected 'header' (T_STRING), expecting ',' or ';' in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:54:29 America/Chicago] PHP Parse error:  syntax error, unexpected 'header' (T_STRING), expecting ',' or ';' in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:54:42 America/Chicago] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:54:43 America/Chicago] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:54:44 America/Chicago] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:54:44 America/Chicago] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:54:44 America/Chicago] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:54:44 America/Chicago] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:54:45 America/Chicago] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/kiacom/public_html/promociones/prom/index.php on line 6
+[28-Sep-2016 15:54:47 America/Chicago] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/kiacom/public_html/promociones/prom/index.php on line 6

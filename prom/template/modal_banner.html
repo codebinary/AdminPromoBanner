@@ -1,0 +1,69 @@
+<div class="modal fade" id="modal_banner">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title">Banner</h4>
+      </div>
+
+      <form name="frmBanner"
+            
+            novalidate="novalidate"
+            >
+
+        <div class="modal-body" >
+
+            <div class="form-group">
+                <label>Concesionario</label>
+                <select ng-model="bannerSel.concesionario" class="form-control">
+                    <option value="">selecccione un concesionario</option>
+                    <option value="motorsurkia">MotorSur kia</option>
+                    <option value="autodisakia">AutodisaKia</option>
+                    <option value="interamericananorte">Interamericana Norte</option>
+                    <option value="interamericanatrujillo">Interamericana trujillo</option>
+                    <option value="kiamultimarkas">Kia Multimarkas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Enlace</label>
+                <input type="text" 
+                		class="form-control" 
+                		placeholder="Enlace del banner"
+                		ng-model="bannerSel.enlace" 
+                		required>
+            </div>
+
+            <div class="form-group">
+                <label>Posicion</label>
+                <input type="text" 
+                		class="form-control" 
+                		placeholder="Ingrese la posición"
+                		ng-model="bannerSel.posicion" 
+                		required>
+            </div>
+            <div class="form-group" ng-controller="bannerUploadCtrl">
+                <label>Imagen</label>
+                <input type="file" name="file" uploader-model1="file" id="files"><br>
+                <button  type="submit" ng-click="uploadBanner(bannerSel, frmBanner)" class="btn btn-primary"><i class="fa fa-save"></i> Guardar</button>
+            </div>
+            <!-- <div class="form-group" >
+                 
+                <button  type="submit" ng-click="uploadBanner(bannerSel, frmBanner)" class="btn btn-primary"><i class="fa fa-save"></i> Guardar</button>
+            </div> -->
+
+
+        </div>
+
+        <div class="modal-footer">
+            <!--<button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Guardar</button>-->
+            <!--<button  type="submit" ng-click="uploadFile(promocionSel, frmPromocion)" class="btn btn-primary"><i class="fa fa-save"></i> Subir imagen</button>-->
+        </div>
+
+
+      </form>
+
+
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>

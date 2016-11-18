@@ -1,0 +1,87 @@
+<div class="modal fade" id="modal_promocion">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title">Promocion</h4>
+      </div>
+
+      <form name="frmPromocion"
+            ng-submit="guardarPromo(promocionSel, frmPromocion)"
+            novalidate="novalidate">
+
+        <div class="modal-body">
+
+            <div class="form-group">
+                <label>Modelo</label>
+                <input type="text" class="form-control" placeholder="Nombre modelo"
+                ng-model="promocionSel.nombre" required>
+            </div>
+            <div class="form-group">
+                <label>Legal</label>
+                
+                <textarea class="form-control" rows="5" ng-model="promocionSel.legal" placeholder="Legal de la promoción"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Estado</label><br>
+                <label class="radio-inline">
+                    <input type="radio" ng-model="promocionSel.estado" required value="0">No Visible
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-model="promocionSel.estado" required value="1">Visible
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>Concesionario</label><br>
+                <select ng-model="promocionSel.concesionario" class="form-control">
+                    <option value="">selecccione un concesionario</option>
+                    <option value="motorsurkia">MotorSur kia</option>
+                    <option value="autodisakia">AutodisaKia</option>
+                    <option value="interamericananorte">Interamericana Norte</option>
+                    <option value="interamericanatrujillo">Interamericana trujillo</option>
+                    <option value="kiamultimarkas">Kia Multimarkas</option>
+                </select>
+            </div>
+
+            <!--<div class="form-group">
+                <label>Imagen</label>
+                <input type="file" ngf-select ng-model="promocionSel.file" name="file"    
+                         accept="image/*" ngf-max-size="2MB">
+            </div>-->
+
+            <div class="form-group" ng-controller="uploadCtrl" >
+                <label for="exampleInputFile">Imagen</label>
+                <input type="file" name="file" uploader-model="file" id="files"><br>
+                
+                <br>
+                
+                <div class="alert alert-success animated fadeIn" ng-show="mensajeFile">
+                  <strong>Éxito!</strong> Se Ingresaron todos los datos.
+                </div>
+                <div class="alert alert-success animated fadeIn" ng-show="mensajeData">
+                  <strong>Éxito!</strong> Se actulizaron los datos, pero no actulizó la imagen.
+                </div>
+                <div class="alert alert-danger animated fadeIn" ng-show="mensajeError">
+                  <strong>Fallo!</strong> No actualizó la imagen.
+                </div>
+                <button  type="submit" ng-click="uploadFile(promocionSel, frmPromocion)" class="btn btn-primary"><i class="fa fa-save"></i> Guardar</button>
+            </div>
+
+
+        </div>
+
+        <div class="modal-footer">
+            <!--<button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Guardar</button>-->
+            <!--<button  type="submit" ng-click="uploadFile(promocionSel, frmPromocion)" class="btn btn-primary"><i class="fa fa-save"></i> Subir imagen</button>-->
+        </div>
+
+
+      </form>
+
+
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>

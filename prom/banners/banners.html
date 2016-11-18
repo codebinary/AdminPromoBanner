@@ -1,0 +1,94 @@
+<ol class="breadcrumb animated fadeIn fast">
+	<li><a href="#/"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+	<li class="active">Banners</li>
+</ol> 
+
+
+<div class="row">
+	
+	<div class="col-md-12">
+	  <div class="box">
+	    
+	    <div class="box-header with-border">
+	      <h3 class="box-title">Banners</h3>
+	
+			<div class="box-tools">
+	            <div class="input-group">	
+	              <a ng-click="mostrarModal({})" class="btn btn-primary"><i class="fa fa-plus"></i> Agregar Banner</a>
+	            </div>
+	            
+	        </div>
+
+	    </div>
+	    <!-- /.box-header -->
+
+
+	    
+	    <div class="box-body">
+	      
+	      <table  class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Imagen</th>
+					<th>Concesionario</th>
+					<th>Enlace</th>
+					<th>Posicion</th>
+					<th>Fecha</th>
+					
+					<th>Acciones</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="banner in banners.banners">
+					<td>{{ $index+1 }}</td>
+					<td width="10%"><img  width="100%" src="{{ banner.imagen }}"></td>
+					<td>{{ banner.concesionario }}</td>
+					<td>{{ banner.enlace }}</td>
+					<td>{{ banner.posicion }}</td>
+					<td>{{ banner.fecha }}</td>
+					
+					<td>
+						<a ng-click="mostrarModal( banner )" class="btn btn-warning"><i class="fa fa-edit"></i></a>
+						<a ng-click="deleteBanner(banner)" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+					</td>
+
+				</tr>
+			</tbody>
+
+	      </table>
+
+	      
+
+	
+		</div>
+
+		<div class="box-footer clearfix">
+          <ul class="pagination pagination-sm no-margin pull-right">
+            <li><a ng-click="moverA(1)">«</a></li>
+
+			<li ng-repeat="pag in promociones.paginas"
+				ng-class="{
+					'active': promociones.pag_actual === pag
+				}">
+				<a ng-click="moverA(pag)">{{ pag }}</a>
+			</li>
+<!-- 
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+ -->
+
+            <li><a ng-click="moverA( promociones.total_paginas )" >»</a></li>
+          </ul>
+        </div>
+
+
+
+		</div>
+	</div>
+
+
+</div>
+
+<div ng-include="'template/modal_banner.html'"></div>
