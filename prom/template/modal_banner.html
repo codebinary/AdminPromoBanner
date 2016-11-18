@@ -44,8 +44,10 @@
             <div class="form-group" ng-controller="bannerUploadCtrl">
                 <label>Imagen</label>
                 <input type="file" name="file" uploader-model1="file" id="files"><br>
-                <button  type="submit" ng-click="uploadBanner(bannerSel, frmBanner)" class="btn btn-primary"><i class="fa fa-save"></i> Guardar</button>
+                <button ng-disabled="!frmBanner.$valid"  type="submit" ng-click="uploadBanner(bannerSel, frmBanner)" class="btn btn-primary"><i class="fa fa-save"></i> Guardar</button>
             </div>
+
+            <!--<div ng-show="preload" style="text-align:center;"><i class="fa fa-refresh fa-5x" aria-hidden="true"></i></div>-->
             <!-- <div class="form-group" >
                  
                 <button  type="submit" ng-click="uploadBanner(bannerSel, frmBanner)" class="btn btn-primary"><i class="fa fa-save"></i> Guardar</button>
